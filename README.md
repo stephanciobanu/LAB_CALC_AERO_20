@@ -6,5 +6,5 @@ PROJECT IS STILL WIP
 
 Run the scripts in the following order:
 
-1) NACA_airfoil_plot
-2) NACA_panels_def
+1) NACA_airfoil_def_v2
+2) 
