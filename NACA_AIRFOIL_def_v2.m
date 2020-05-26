@@ -83,7 +83,7 @@ plot(x_r_c,y_r_c,'g-')          % plotting MCL
 plot(x_r_low,y_r_low,'b-')      % plotting lower surface
 
 grid on
-title(['AoA=',num2str(AoA),'บ'])
+title(['AoA=',num2str(AoA),'ยบ'])
 legend(strcat('NACA',foil_name),'MCL')
 
 %  inBetween = [y_r_low, fliplr(y_r_up)];            % add those rows to
@@ -121,7 +121,7 @@ panel_length=zeros;
 for i=1:length(y_r_up)+length(y_r_low)-2
     
     panel_inclination(i)=atan((Airfoil_coord(i+1,2)-Airfoil_coord(i,2))/(Airfoil_coord(i+1,1)-Airfoil_coord(i,1)));
-    % define normal and tangential direction of each panel 
+    % define tangential direction of each panel 
     panel_length(i)=((Airfoil_coord(i,1)-Airfoil_coord(i+1,1))^2+(Airfoil_coord(i+1,2)-Airfoil_coord(i,2))^2)^(0.5);
     tau_x(i)=(Airfoil_coord(i+1,1)-Airfoil_coord(i,1))/(panel_length(i));
     tau_y(i)=(Airfoil_coord(i+1,2)-Airfoil_coord(i,2))/(panel_length(i));
